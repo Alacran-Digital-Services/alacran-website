@@ -24,7 +24,7 @@ const IndexPage = () => (
     <p>Alacrán Studio was built with the intention of serving communities to elevate their brand. With organized processes, thoughtful design, the latest technology, and accessible consultants, we strive to grow your digital presence to get in front of the audience that matters to you.</p>
     <button>Schedule Your FREE Consultation</button>
 
-    <h2>**Organized Process**</h2>
+    <h2>Organized Process</h2>
 
     <p>
       We create a personalized roadmap to navigate
@@ -39,7 +39,7 @@ const IndexPage = () => (
     </span>
 
     <h2>
-      **Thoughtful Design**
+      Thoughtful Design
     </h2>
 
     <p>
@@ -53,7 +53,7 @@ const IndexPage = () => (
     </span>
 
     <h2>
-      **Latest Technology**
+      Latest Technology
     </h2>
 
     <p>
@@ -67,7 +67,7 @@ const IndexPage = () => (
     </span>
 
     <h2>
-      **Accessible Consultants**
+      Accessible Consultants
     </h2>
 
     <p>
