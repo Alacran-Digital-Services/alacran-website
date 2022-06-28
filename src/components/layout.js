@@ -30,6 +30,9 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
+          fontSize: `1.25rem`,
+          color: `#3f3f40`,
+          lineHeight: `1.75rem`,
         }}
       >
         <main>{children}</main>

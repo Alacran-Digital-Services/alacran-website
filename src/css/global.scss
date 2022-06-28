@@ -1,11 +1,5 @@
 @import "common.scss";
 
-.bodyCopy {
-	font-size: 1.25rem;
-	color: #3f3f40;
-	line-height: 1.75rem;
-}
-
 .titleCopy {
 	color: #0678BF;
 }
@@ -85,11 +79,15 @@
 
 // Media Queries
 @media only screen and (max-width: 480px) {
+	.contentBlockFooter {
+		margin-top: 2.45rem;
+	}
+
 	// Primary Button
 	.primaryButton {
 		margin: 0 auto;
 		display: block;
-		margin-top: 2.45rem;
+		font-size: 1.16rem;
 	}
 	
 	// Person Content
