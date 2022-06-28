@@ -12,7 +12,7 @@ const IndexPage = () => (
     <Seo title="Home" />
     <HomeWelcomeScreen></HomeWelcomeScreen>
 
-    <div className="contentBlock">
+    <div  className="contentBlock" id="firstHomeContent">
       <h1 className="titleCopy">craft your story, grow your business</h1>
       <p>Alacrán Studio was built to serve communities and elevate their brand. With organized processes, thoughtful design, the latest technology, and accessible consultants, we strive to grow your digital presence to get in front of the audience that matters to you.</p>
       <div className="contentBlockFooter">
