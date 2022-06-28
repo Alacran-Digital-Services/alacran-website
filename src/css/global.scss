@@ -1,35 +1,11 @@
 @import "common.scss";
 
 .titleCopy {
-	color: #0678BF;
+	color: #0678bf;
 }
 
 .contentBlock {
 	padding-bottom: 2rem;
-}
-
-// Primary Button
-.primaryButton {
-	background: #f2f2f2;
-	border-radius: 40px;
-	border: none;
-
-	font-family: "Nasalization";
-	font-size: 1.25rem;
-	padding: 22px 44px;
-
-	color: #f21d44;
-	cursor: pointer;
-}
-
-.primaryButton:hover {
-	background: #e4e4e4;
-	transition: 0.5s;
-}
-
-.primaryButton:not(hover) {
-	background: #f2f2f2;
-	transition: 0.5s;
 }
 
 // Blog Content
@@ -68,28 +44,12 @@
 	margin-bottom: 0.8rem;
 }
 
-// Home Welcome Screen
-.homeWelcomeScreen {
-	height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-	align-items: center;
-}
-
 // Media Queries
 @media only screen and (max-width: 480px) {
 	.contentBlockFooter {
 		margin-top: 2.45rem;
 	}
 
-	// Primary Button
-	.primaryButton {
-		margin: 0 auto;
-		display: block;
-		font-size: 1.16rem;
-	}
-	
 	// Person Content
 	.personImage {
 		width: 40%;

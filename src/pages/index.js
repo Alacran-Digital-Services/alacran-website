@@ -1,29 +1,16 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 import "../css/global.scss"
+import HomeWelcomeScreen from "../components/homeWelcomeScreen"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <div className="homeWelcomeScreen">
-      <StaticImage
-        src="../images/Alacran_Logo_FC_Large.png"
-        width={300}
-        quality={95}
-        placeholder="none"
-        formats={["auto", "webp", "avif"]}
-        alt="The Alacran Studio Logo"
-        style={{ marginBottom: `1.45rem`, maxWidth: `300px` }}
-      />
-      <h1>alacrán studio</h1>
-      <h2>Ready for what's next.</h2>
-      <button className="primaryButton">start</button>
-    </div>
+    <HomeWelcomeScreen></HomeWelcomeScreen>
 
     <div className="contentBlock">
       <h1 className="titleCopy">craft your story, grow your business</h1>
