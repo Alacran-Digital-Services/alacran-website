@@ -158,6 +158,7 @@ const IndexPage = () => (
           src="../images/Alacran_Logo_BLK_Small.png"
           width={100}
           quality={95}
+          placeholder="none"
           formats={["auto", "webp", "avif"]}
           alt="The Alacran Studio Logo"
           style={{ marginBottom: `1.45rem` }}
