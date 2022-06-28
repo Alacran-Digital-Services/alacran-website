@@ -16,10 +16,11 @@ const IndexPage = () => (
         width={300}
         quality={95}
         formats={["auto", "webp", "avif"]}
-        alt="A Gatsby astronaut"
+        alt="The Alacran Studio Logo"
         style={{ marginBottom: `1.45rem` }}
       />
       <h1>alacrán studio</h1>
+      <h2>Ready for what's next.</h2>
     </div>
 
     <div className="contentBlock">
@@ -115,29 +116,61 @@ const IndexPage = () => (
 
     <hr></hr>
 
-    <h2 className="titleCopy">About Us</h2>
+    <h2 className="titleCopy">Meet The Team</h2>
     <p>Alacrán Studio was built with a passion for community. We saw the gap between our visionary entrepreneurial community and the realization of those dreams.
 
       We saw a gap between hopeful business owners and their technological presence. Our mission is to use our knowledge, tools, and technology to elevate their brand and expand their reach.</p>
-    <p>An image of the founder.</p>
-    <p>A paragraph of the founder.</p>
+
+    <div className="textAndImageBox--person">
+      <div className="personTextContainer">
+        <h3 className="personTextTitle">Team Member 1</h3>
+        <h4>A Fun Little Subtitle</h4>
+        <p>A paragraph of the founder. This is the second sentence in this paragraph. And then, there was a third. The fourth really added some nice flavor, then the second half delivered and closed.
+        </p>
+        <p>For style purposes, paragraphs for people shouldn't exceed much longer than this. This would be a bit too long, but is just fine in this example. Now, stop; you're done.</p>
+      </div>
+      <p className="personImage">An image of the founder.</p>
+    </div>
+
+    <div className="textAndImageBox--person">
+      <p className="personImage">An image of a team member.</p>
+      <div className="personTextContainer">
+        <h3 className="personTextTitle">Team Member 2</h3>
+        <p>A paragraph of the team member. This is the second sentence in this paragraph. And then, there was a third. The fourth really added some nice flavor, then the second half delivered and closed.</p>
+      </div>
+    </div>
 
     <button className="primaryButton">schedule a call</button>
 
-    <h1>Alacrán Blog</h1>
+    <div className="textAndImageBox--blogHeader">
+      <h1>The Alacrán Blog</h1>
+      <StaticImage
+        src="../images/Alacran_Logo_BLK_Small.png"
+        width={100}
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt="The Alacran Studio Logo"
+        style={{ marginBottom: `1.45rem` }}
+      />
+    </div>
 
-    <p>
-      - Organization
-      - How do you craft ideas for someone?
-      - Organization
-      - How to use Notion to track business expenses
-      - Design
-      - How different colors interact together
-      - Case Study
-      - How we used Gatsby to build Device Fix Inc.’s website
-    </p>
+    <div className="blogContent">
 
-    <p>Add a snazzy end line that ties in our brand. Something like, together, our resilience and readiness will allow us to face any challenge. Because we're like a scorpion. But obviously needs to sound <em>waaaaay</em> better and catchy than that.</p>
+
+
+      <p>
+        - Organization
+        - How do you craft ideas for someone?
+        - Organization
+        - How to use Notion to track business expenses
+        - Design
+        - How different colors interact together
+        - Case Study
+        - How we used Gatsby to build Device Fix Inc.’s website
+      </p>
+
+      <p>Add a snazzy end line that ties in our brand. Something like, together, our resilience and readiness will allow us to face any challenge. Because we're like a scorpion. But obviously needs to sound <em>waaaaay</em> better and catchy than that.</p>
+    </div>
   </Layout>
 )
 
