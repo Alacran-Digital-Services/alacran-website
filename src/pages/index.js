@@ -10,14 +10,15 @@ import "../css/global.scss"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <div style={{ textAlign: `center`, paddingTop: `1rem` }}>
+    <div className="homeWelcomeScreen">
       <StaticImage
         src="../images/Alacran_Logo_FC_Large.png"
         width={300}
         quality={95}
+        placeholder="none"
         formats={["auto", "webp", "avif"]}
         alt="The Alacran Studio Logo"
-        style={{ marginBottom: `1.45rem` }}
+        style={{ marginBottom: `1.45rem`, maxWidth: `300px` }}
       />
       <h1>alacrán studio</h1>
       <h2>Ready for what's next.</h2>
