@@ -1,36 +1,59 @@
+.contentBlockContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0 2rem;
+  flex-wrap: wrap;
+}
+
+.contentBlockImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.contentBlockText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+
+  p {
+    padding: 20px 0 20px;
+  }
+}
+
 .primaryButton {
-	background: #f2f2f2;
-	border-radius: 40px;
-	border: none;
+  background: #f2f2f2;
+  border-radius: 40px;
+  border: none;
 
-	font-family: "Nasalization";
-	font-size: 1.25rem;
-	padding: 22px 44px;
+  font-family: "Nasalization";
+  font-size: 1.25rem;
+  padding: 22px 44px;
 
-	color: #f21d44;
-	cursor: pointer;
+  color: #f21d44;
+  cursor: pointer;
 }
 
 .primaryButton:hover {
-	background: #e4e4e4;
-	transition: 0.5s;
+  background: #e4e4e4;
+  transition: 0.5s;
 }
 
 .primaryButton:not(hover) {
-	background: #f2f2f2;
-	transition: 0.5s;
+  background: #f2f2f2;
+  transition: 0.5s;
 }
 
 .bodyCopy {
-	font-size: 1.25rem;
-	color: #3f3f40;
-	line-height: 1.75rem;
+  font-size: 1.25rem;
+  color: #3f3f40;
+  line-height: 1.75rem;
 }
 
 .titleCopy {
-	color: #0678BF;
+  color: #0678bf;
 }
 
 .contentBlock {
-	padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
