@@ -115,10 +115,9 @@ const IndexPage = () => (
             We care about the individual. Partner with our expert consultant
             teams and rest assured there’s always a human on the other side.
           </p>
+          <button className="primaryButton">build your story today</button>
         </div>
       </div>
-
-      <button className="primaryButton">build your story today</button>
 
       <h2 className="titleCopy">Our Services</h2>
       <p>
