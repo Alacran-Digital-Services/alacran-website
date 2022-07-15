@@ -1,3 +1,5 @@
+@import "common.scss";
+
 .contentBlockContainer {
   display: flex;
   justify-content: space-between;
@@ -90,5 +92,67 @@
 
   .contentBlockContainer {
     justify-content: center;
+  }
+}
+
+.titleCopy {
+  color: #0678bf;
+}
+
+// Blog Content
+.textAndImageBox--blogHeader {
+  @extend .textAndImageBox;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.blogContent {
+  padding: 0 0.5rem;
+}
+
+// Person Content
+.textAndImageBox--person {
+  @extend .textAndImageBox;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.personImage {
+  border: 5px double #f2f2f2;
+  padding: 1.25rem;
+
+  width: 34%;
+  min-height: 280px;
+  text-align: center;
+}
+
+.personTextContainer {
+  width: 56%;
+}
+
+.personTextTitle {
+  margin-bottom: 0.8rem;
+}
+
+// Media Queries
+@media only screen and (max-width: 480px) {
+  .contentBlockFooter {
+    margin-top: 2.45rem;
+  }
+
+  // Person Content
+  .personImage {
+    width: 40%;
+    min-height: 140px;
+  }
+
+  .personText {
+    width: 56%;
+  }
+
+  // Blog Content
+  .blogContent {
+    padding: 0 0.25rem;
   }
 }
