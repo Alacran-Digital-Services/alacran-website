@@ -1,67 +1,158 @@
 @import "common.scss";
 
+.contentBlockContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0 2rem;
+  flex-wrap: wrap;
+}
+
+.contentBlockImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.contentBlockText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+
+  p {
+    padding: 20px 0 20px;
+  }
+}
+
+.primaryButton {
+  background: #f2f2f2;
+  border-radius: 40px;
+  border: none;
+
+  font-family: "Nasalization";
+  font-size: 1.25rem;
+  padding: 22px 44px;
+
+  color: #f21d44;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  background: #e4e4e4;
+  transition: 0.5s;
+}
+
+.primaryButton:not(hover) {
+  background: #f2f2f2;
+  transition: 0.5s;
+}
+
+.bodyCopy {
+  font-size: 1.25rem;
+  color: #3f3f40;
+  line-height: 1.75rem;
+}
+
 .titleCopy {
-	color: #0678bf;
+  color: #0678bf;
 }
 
 .contentBlock {
-	padding-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .contentBlockImage {
+    order: 1;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contentBlockText {
+    order: 2;
+    max-width: none;
+    margin-top: 2rem;
+  }
+
+  .contentBlockContainer {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1300px) {
+  .contentBlockImage {
+    height: 176px;
+    left: 20px;
+  }
+
+  .contentBlockText {
+    order: 2;
+    max-width: none;
+    margin-top: 2rem;
+  }
+
+  .contentBlockContainer {
+    justify-content: center;
+  }
+}
+
+.titleCopy {
+  color: #0678bf;
 }
 
 // Blog Content
 .textAndImageBox--blogHeader {
-	@extend .textAndImageBox;
-	justify-content: space-around;
-	align-items: center;
-	border-bottom: 2px solid black;
+  @extend .textAndImageBox;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid black;
 }
 
 .blogContent {
-	padding: 0 0.5rem;
+  padding: 0 0.5rem;
 }
 
 // Person Content
 .textAndImageBox--person {
-	@extend .textAndImageBox;
-	justify-content: space-between;
-	align-items: flex-start;
+  @extend .textAndImageBox;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .personImage {
-	border: 5px double #f2f2f2;
-	padding: 1.25rem;
+  border: 5px double #f2f2f2;
+  padding: 1.25rem;
 
-	width: 34%;
-	min-height: 280px;
-	text-align: center;
+  width: 34%;
+  min-height: 280px;
+  text-align: center;
 }
 
 .personTextContainer {
-	width: 56%;
+  width: 56%;
 }
 
 .personTextTitle {
-	margin-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 
 // Media Queries
 @media only screen and (max-width: 480px) {
-	.contentBlockFooter {
-		margin-top: 2.45rem;
-	}
+  .contentBlockFooter {
+    margin-top: 2.45rem;
+  }
 
-	// Person Content
-	.personImage {
-		width: 40%;
-		min-height: 140px;
-	}
+  // Person Content
+  .personImage {
+    width: 40%;
+    min-height: 140px;
+  }
 
-	.personText {
-		width: 56%;
-	}
+  .personText {
+    width: 56%;
+  }
 
-	// Blog Content
-	.blogContent {
-		padding: 0 0.25rem;
-	}
+  // Blog Content
+  .blogContent {
+    padding: 0 0.25rem;
+  }
 }

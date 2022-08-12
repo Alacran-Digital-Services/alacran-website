@@ -1,70 +1,75 @@
 @import "common.scss";
 
 .homeWelcomeScreenContainer {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //   background-image: url("../images/Alacran_MountainScene-light-mode.png");
+  //   background-repeat: no-repeat;
+  //   background-size: 100%;
+  //   background-position: center center;
 
-	.homeLogo {
-		opacity: 0;
-		animation: fadeInAndDrop 1s ease-in both;
-		animation-delay: 1s;
-	}
+  .homeLogo {
+    opacity: 0;
+    animation: fadeInAndDrop 1s ease-in both;
+    animation-delay: 1s;
+  }
 
-	h1 {
-		opacity: 0;
-		animation: fadeInAndDrop 1s ease-in both;
-		animation-delay: 2s;
-	}
+  h1 {
+    opacity: 0;
+    animation: fadeInAndDrop 1s ease-in both;
+    animation-delay: 2s;
+  }
 
-	h2 {
-		opacity: 0;
-		animation: fadeIn 1.5s ease-in both;
-		animation-delay: 3s;
-	}
+  h3 {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in both;
+    animation-delay: 3s;
+    letter-spacing: 0.2rem;
+  }
 
-	// Start Button
-	.startButton {
-		@extend .primaryButton;
-		opacity: 0;
-		animation: flashButton 2s ease-in both;
-		animation-delay: 4.5s;
-		animation-iteration-count: infinite;
-	}
+  // Start Button
+  .startButton {
+    @extend .primaryButton;
+    opacity: 0;
+    animation: flashButton 2s ease-in both;
+    animation-delay: 4.5s;
+    animation-iteration-count: infinite;
+  }
 }
 
 // Home Welcome Screen Animations
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInAndDrop {
-	from {
-		opacity: 0;
-		transform: translate3d(0, -20%, 0);
-	}
-	to {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 // Start Button Animation
 @keyframes flashButton {
-	0% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
