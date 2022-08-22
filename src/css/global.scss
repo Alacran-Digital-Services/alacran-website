@@ -23,37 +23,14 @@
   }
 }
 
-.primaryButton {
-  background: #f2f2f2;
-  border-radius: 40px;
-  border: none;
-
-  font-family: "Nasalization";
-  font-size: 1.25rem;
-  padding: 22px 44px;
-
-  color: #f21d44;
-  cursor: pointer;
-}
-
-.primaryButton:hover {
-  background: #e4e4e4;
-  transition: 0.5s;
-}
-
-.primaryButton:not(hover) {
-  background: #f2f2f2;
-  transition: 0.5s;
-}
-
 .bodyCopy {
   font-size: 1.25rem;
-  color: #3f3f40;
+  color: $dark-gray-color;
   line-height: 1.75rem;
 }
 
 .titleCopy {
-  color: #0678bf;
+  color: $primary-blue-color;
 }
 
 .contentBlock {
@@ -77,16 +54,12 @@
   }
 }
 
-.titleCopy {
-  color: #0678bf;
-}
-
 // Blog Content
 .textAndImageBox--blogHeader {
   @extend .textAndImageBox;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid $dark-gray-color;
 }
 
 .blogContent {
@@ -101,7 +74,7 @@
 }
 
 .personImage {
-  border: 5px double #f2f2f2;
+  border: 5px double $light-gray-color;
   padding: 1.25rem;
 
   width: 34%;
