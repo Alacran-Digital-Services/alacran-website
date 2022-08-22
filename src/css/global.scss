@@ -8,7 +8,7 @@
 }
 
 .contentBlockImage {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -64,24 +64,6 @@
   .contentBlockImage {
     order: 1;
     max-width: 100%;
-    height: auto;
-  }
-
-  .contentBlockText {
-    order: 2;
-    max-width: none;
-    margin-top: 2rem;
-  }
-
-  .contentBlockContainer {
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1300px) {
-  .contentBlockImage {
-    height: 176px;
-    left: 20px;
   }
 
   .contentBlockText {

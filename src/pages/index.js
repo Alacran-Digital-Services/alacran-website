@@ -12,7 +12,7 @@ const IndexPage = () => (
     <Seo title="Home" />
     <HomeWelcomeScreen></HomeWelcomeScreen>
     <div className="contentBlocks">
-      <div className="contentBlockContainer">
+      <div className="contentBlockContainer" id="firstHomeContent">
         <div className="contentBlockImage">
           <StaticImage
             src="../images/craftyourstory.png"
@@ -20,7 +20,7 @@ const IndexPage = () => (
             height={300}
           ></StaticImage>
         </div>
-        <div className="contentBlockText" id="firstHomeContent">
+        <div className="contentBlockText">
           <h1 className="titleCopy">craft your story, grow your business</h1>
           <p>
             Alacrán Studio was built to serve communities and elevate their
