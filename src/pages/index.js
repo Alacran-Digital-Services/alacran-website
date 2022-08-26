@@ -40,7 +40,7 @@ const IndexPage = () => (
       <div className="contentBlockContainer">
         <div className="contentBlockText">
           <h2 className="titleCopy">Organized Process</h2>
-          <p className="bodyCopy">
+          <p>
             We create a personalized roadmap to navigate your organization’s
             journey and break through barriers. We meet our clients where they
             are and bring them to their highest potential.
@@ -65,7 +65,7 @@ const IndexPage = () => (
         </div>
         <div className="contentBlockText">
           <h2 className="titleCopy">Thoughtful Design</h2>
-          <p className="bodyCopy">
+          <p>
             Work with our experts to integrate best design practices that lead
             to results. Carefully craft designs that share your meaningful
             message to the world.
@@ -76,7 +76,7 @@ const IndexPage = () => (
       <div className="contentBlockContainer">
         <div className="contentBlockText">
           <h2 className="titleCopy">Latest Technology</h2>
-          <p className="bodyCopy">
+          <p>
             We are passionate about fast, light-weight, high-ranking, and
             state-of-the-art tools and tech. Using the JAMstack, a new way to
             build headless sites, we incessantly chase innovation and distill it
@@ -102,7 +102,7 @@ const IndexPage = () => (
         </div>
         <div className="contentBlockText">
           <h2 className="titleCopy">Accessible Consultants</h2>
-          <p className="bodyCopy">
+          <p>
             We care about the individual. Partner with our expert consultant
             teams and rest assured there’s always a human on the other side.
           </p>
