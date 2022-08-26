@@ -1,22 +1,3 @@
 @import "colors.scss";
 @import "./reusableComponents/primaryButton.scss";
-
-// Text And Image Box
-.textAndImageBox {
-	display: flex;
-	margin-top: 2.45rem;
-	margin-bottom: 1rem;
-}
-
-// Primary Button
-
-
-// Media Queries
-@media only screen and (max-width: 480px) {
-	// Primary Button
-	.primaryButton {
-		margin: 0 auto;
-		display: block;
-		font-size: 1.16rem;
-	}
-}
+@import "./composableComponents/textAndImageBox.scss";
