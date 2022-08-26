@@ -8,7 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
-import "./layout.css"
+import "../style/layout.scss"
 
 const Layout = ({ children }) => {
 
