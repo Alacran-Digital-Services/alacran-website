@@ -22,6 +22,9 @@ const IndexPage = () => (
         </div>
         <div className="contentBlockText">
           <h1 className="titleCopy">craft your story, grow your business</h1>
+          <h2>Sample Header 2 Text</h2>
+          <h3>Sample Header 3 Text in Bold.</h3>
+          <h4>H4's work, too.</h4>
           <p>
             Alacrán Studio was built to serve communities and elevate their
             brand. With organized processes, thoughtful design, the latest
