@@ -1,4 +1,4 @@
-@import "common.scss";
+@import "../common.scss";
 
 .homeWelcomeScreenContainer {
   height: 100vh;
@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-    background-image: url("../images/Alacran_MountainScene-light-mode.png");
+    background-image: url("../../images/Alacran_MountainScene-light-mode.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center center;

@@ -1,4 +1,5 @@
 @import "colors.scss";
+@import "./reusableComponents/primaryButton.scss";
 
 // Text And Image Box
 .textAndImageBox {
@@ -8,28 +9,7 @@
 }
 
 // Primary Button
-.primaryButton {
-	background: $light-gray-color;
-	border-radius: 40px;
-	border: none;
 
-	font-family: "Nasalization";
-	font-size: 1.25rem;
-	padding: 22px 44px;
-
-	color: $salmon-color;
-	cursor: pointer;
-}
-
-.primaryButton:hover {
-	background: #e4e4e4;
-	transition: 0.5s;
-}
-
-.primaryButton:not(hover) {
-	background: $light-gray-color;
-	transition: 0.5s;
-}
 
 // Media Queries
 @media only screen and (max-width: 480px) {

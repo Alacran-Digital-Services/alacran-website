@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-import "../style/homeWelcomeScreen.scss"
+import "../style/composedComponents/homeWelcomeScreen.scss"
 
 class HomeWelcomeScreen extends React.Component {
   handleClick() {
