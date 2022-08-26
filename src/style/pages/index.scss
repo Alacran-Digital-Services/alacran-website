@@ -1,5 +1,11 @@
 @import "../common.scss";
 
+.contentBlocks {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 1rem 1.5rem;
+}
+
 .contentBlockContainer {
   display: flex;
   justify-content: space-between;
