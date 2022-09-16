@@ -1,14 +1,5 @@
-// Text And Image Box
-.textAndImageBox {
-	display: flex;
-	margin-top: 2.45rem;
-	margin-bottom: 1rem;
-}
-
-
-// Primary Button
 .primaryButton {
-	background: #f2f2f2;
+	background: $light-gray-color;
 	border-radius: 40px;
 	border: none;
 
@@ -16,7 +7,7 @@
 	font-size: 1.25rem;
 	padding: 22px 44px;
 
-	color: #f21d44;
+	color: $salmon-color;
 	cursor: pointer;
 }
 
@@ -26,13 +17,11 @@
 }
 
 .primaryButton:not(hover) {
-	background: #f2f2f2;
+	background: $light-gray-color;
 	transition: 0.5s;
 }
 
-// Media Queries
 @media only screen and (max-width: 480px) {
-	// Primary Button
 	.primaryButton {
 		margin: 0 auto;
 		display: block;

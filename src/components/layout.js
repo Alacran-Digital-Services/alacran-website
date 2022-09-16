@@ -8,22 +8,13 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
-import "./layout.css"
+import "../style/layout.scss"
 
 const Layout = ({ children }) => {
 
   return (
     <>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-          fontSize: `1.25rem`,
-          color: `#3f3f40`,
-          lineHeight: `1.75rem`,
-        }}
-      >
+      <div>
         <main>{children}</main>
         <footer
           style={{

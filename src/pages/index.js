@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import "../css/global.scss"
+import "../style/pages/index.scss"
 import HomeWelcomeScreen from "../components/homeWelcomeScreen"
 
 const IndexPage = () => (
@@ -12,7 +12,7 @@ const IndexPage = () => (
     <Seo title="Home" />
     <HomeWelcomeScreen></HomeWelcomeScreen>
     <div className="contentBlocks">
-      <div className="contentBlockContainer">
+      <div className="contentBlockContainer" id="firstHomeContent">
         <div className="contentBlockImage">
           <StaticImage
             src="../images/craftyourstory.png"
@@ -20,8 +20,11 @@ const IndexPage = () => (
             height={300}
           ></StaticImage>
         </div>
-        <div className="contentBlockText" id="firstHomeContent">
+        <div className="contentBlockText">
           <h1 className="titleCopy">craft your story, grow your business</h1>
+          <h2>Sample Header 2 Text</h2>
+          <h3>Sample Header 3 Text in Bold.</h3>
+          <h4>H4's work, too.</h4>
           <p>
             Alacrán Studio was built to serve communities and elevate their
             brand. With organized processes, thoughtful design, the latest
@@ -40,7 +43,7 @@ const IndexPage = () => (
       <div className="contentBlockContainer">
         <div className="contentBlockText">
           <h2 className="titleCopy">Organized Process</h2>
-          <p className="bodyCopy">
+          <p>
             We create a personalized roadmap to navigate your organization’s
             journey and break through barriers. We meet our clients where they
             are and bring them to their highest potential.
@@ -65,7 +68,7 @@ const IndexPage = () => (
         </div>
         <div className="contentBlockText">
           <h2 className="titleCopy">Thoughtful Design</h2>
-          <p className="bodyCopy">
+          <p>
             Work with our experts to integrate best design practices that lead
             to results. Carefully craft designs that share your meaningful
             message to the world.
@@ -76,7 +79,7 @@ const IndexPage = () => (
       <div className="contentBlockContainer">
         <div className="contentBlockText">
           <h2 className="titleCopy">Latest Technology</h2>
-          <p className="bodyCopy">
+          <p>
             We are passionate about fast, light-weight, high-ranking, and
             state-of-the-art tools and tech. Using the JAMstack, a new way to
             build headless sites, we incessantly chase innovation and distill it
@@ -102,7 +105,7 @@ const IndexPage = () => (
         </div>
         <div className="contentBlockText">
           <h2 className="titleCopy">Accessible Consultants</h2>
-          <p className="bodyCopy">
+          <p>
             We care about the individual. Partner with our expert consultant
             teams and rest assured there’s always a human on the other side.
           </p>

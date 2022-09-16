@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-import "../css/homeWelcomeScreen.scss"
+import "../style/composedComponents/homeWelcomeScreen.scss"
 
 class HomeWelcomeScreen extends React.Component {
   handleClick() {
@@ -19,7 +19,7 @@ class HomeWelcomeScreen extends React.Component {
           formats={["auto", "webp", "avif"]}
           alt="The Alacran Studio Logo"
           className="homeLogo"
-          style={{ marginBottom: `1.45rem`, maxWidth: `300px` }}
+          style={{ marginBottom: `1.45rem`, maxWidth: `300px`, minHeight: `280px` }}
         />
         <h1>alacrán studio</h1>
         <h3>Ready For What's Next</h3>
